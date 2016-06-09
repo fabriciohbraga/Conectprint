@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Orçamento - Conectprint</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Marca e de alternância se agrupado para melhor visualização móvel -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Conect Print</a>
+            </div>
+            <!-- Colete as ligações nav, formulários e outros conteúdos para alternar -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Orcamento</a>
+                    </li>
+                    <li>
+                        <a href="#">Tabela de Preços</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                     <li class="divider">
+                        <a href="#"></a>
+                    </li>
+                    <form class="navbar-form navbar-left" >
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email" />
+                            <input type="text" class="form-control" placeholder="Senha" />
+                        </div> 
+                        <button type="submit" class="btn btn-default">
+                            Logar
+                        </button>
+                    </form>
+
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+   
+    <div class="container">
+    <div class="row">
+        <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Cadastro de Produtos</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtProduto">Produto</label>  
+  <div class="col-md-5">
+  <input id="txtProduto" name="txtProduto" type="text" placeholder="Digite o produto" class="form-control input-md" required="">
+  <span class="help-block">ex.: Cartão de visita, Panfleto</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtFormato">Formato</label>  
+  <div class="col-md-4">
+  <input id="txtFormato" name="txtFormato" type="text" placeholder="Digite o formato" class="form-control input-md" required="">
+  <span class="help-block">Digite o formato em cm</span>  
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dropCores">Selecione as cores</label>
+  <div class="col-md-4">
+    <select id="dropCores" name="dropCores" class="form-control">
+      <option value="4/0">4/0</option>
+      <option value="4/1">4/1</option>
+      <option value="4/4">4/4</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dropPapel">Papel</label>
+  <div class="col-md-4">
+    <select id="dropPapel" name="dropPapel" class="form-control">
+      <option value="Couche Brilho 80g">Couche Brilho 80g</option>
+      <option value="Couche Brilho 90g">Couche Brilho 90g</option>
+      <option value="Couche Brilho 115g">Couche Brilho 115g</option>
+      <option value="Couche Brilho 150g">Couche Brilho 150g</option>
+      <option value="Duodesign 250g">Duodesign 250g</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtQtd">Quantdade</label>  
+  <div class="col-md-4">
+  <input id="txtQtd" name="txtQtd" type="text" placeholder="Digite a quantidade" class="form-control input-md" required="">
+  <span class="help-block">Digite a quantidade</span>  
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnCadastrar">retirar</label>
+  <div class="col-md-4">
+    <button id="btnCadastrar" name="btnCadastrar" class="btn btn-primary">Cadstrar</button>
+  </div>
+</div>
+
+
+</fieldset>
+</form>
+</div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
